@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --font-1:"Noto Sans KR", sans-serif;
+    --font-2: "Montserrat", sans-serif;
+    --font-3:"Poppins", sans-serif;
+
+    --primary-color:#fff;
+    --second-color:#000;
+    --color-1:#4D869C;
+    --color-2:#7AB2B2;
+    --color-3:#EEF7FF;
+    --color-4:#CDE8E5;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.header{
+    position: sticky;
+    display: flex;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    top: 0;
+    font-family: var(--font-3);
+    padding: 8px 0px 0 8px;
+    justify-content: space-between;
+    z-index: 100;
+}
+.span-name{
+    color: var(--color-1);
+}
+li,a{
+    text-decoration: none;
+    list-style: none;
+}
+.nav{
+    margin-right: 12%;
+}
+.list-nav{
+    display: flex;
+    gap: 12px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 8px;
+}
+.tag-nav{
+    color: var(--second-color);
+    transition: .3s;
+}
+.tag-nav:hover{
+    color: var(--color-2);
+}
